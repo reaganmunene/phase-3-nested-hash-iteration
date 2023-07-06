@@ -19,6 +19,12 @@ end
 
 def remove_strawberry(contacts)
   # your code here!
+contacts.each do |user, details|
+   if user === "Freddie Mercury"
+    details[:favorite_ice_cream_flavors].delete('strawberry')
+   end
+   binding.pry
+end
 end
 
 # print the output to the terminal for inspection
